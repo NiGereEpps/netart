@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NE WebVR</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+</head>
+<body>
+    
+    <a-scene background="color:#3a3a3a"> 
+
+        <a-videosphere id="scene" color="gray"></a-videosphere>
+
+        <!--   
+        -->
+
+        <a-entity id="camera"
+            camera
+            position="-3.3 1.6 3.6" 
+            wasd-controls
+            rotation="-3.093972093706406 40.450820336236035 0" 
+            look-controls>
+                <a-cursor color="red" 
+                    event-set__1="_event: mouseenter; color: springgreen"
+                    event-set__2="_event: mouseleave; color: red"
+                    raycaster="objects: #screen;"></a-cursor>
+        </a-entity>  
+
+       <a-entity id="controller"
+            laser-controls
+            line="color: red"
+            event-set__1="_event: mouseenter; line.color: springgreen"
+            event-set__2="_event: mouseleave; line.color: red"
+            raycaster="objects: #screen"
+        ></a-entity>
+     
+
+       <a-entity id="room" 
+           gltf-model="models/Room.glb" 
+           position="-10.68744 -3.94677 -2.19433"
+           scale="0.02 0.02 0.02"
+       ></a-entity>
+
+        <a-entity id="begin"
+            text="value: Click on the screen to begin; 
+            font: mozillavr; 
+            align: center" 
+            position="-1.745 2.71183 -4.085" 
+            scale="3 3 2"
+        ></a-entity>
+
+        <a-entity id="welcome"
+            text="value: Welcome to WebVR; 
+            font: mozillavr; 
+            align: center" 
+            position="-1.745 2.71183 -4.085" 
+            scale="10 10 2"
+            visible="false"
+        ></a-entity>
+
+        <a-entity id="screen"
+            geometry="primitive: box" 
+            scale="2.4 1.25 0.01"
+            material="src: images/screen.png"
+            position="-1.745 1.893 -4.085"
+            event-set__1="_event: mouseenter; material.color: white;"
+            event-set__2="_event: mouseleave; material.color: grey;"
+            event-set__3="_event: click; _target: #room; visible: false"
+            event-set__4="_event: click; _target: #screen; visible: false"
+            event-set__5="_event: click; _target: #begin; visible: false"
+            event-set__6="_event: click; _target: #welcome; visible: true"
+            event-set__7="_event: click; _target: #scene; src: videos/city.mp4"
+            event-set__7="_event: click; _target: #scene; color:white"
+            color="white"
+        ></a-entity>
+
+        <a-entity 
+            position= "-7.2 3.3 2.6"
+            light="color: #ffffff; 
+            intensity: 0.8"
+        ></a-entity>
+
+        <a-entity light="color: #ffffff; intensity: 0.4; type: ambient"></a-entity>
+    </a-scene>
+
+</body>
+</html>

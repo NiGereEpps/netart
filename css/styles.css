@@ -1,0 +1,41 @@
+body {
+  background-image: url(../images/background1.jpg);
+  text-align: center;
+  font-family: Serif, Garamond, Times;
+}
+/* Image from: https://e.huawei.com/se/products/network-management-and-analysis-software */ 
+
+button { 
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    background-color: black;
+    border-radius: 6px;
+    transition:all 1.5s ease-in;
+}
+
+button:hover { 
+    opacity: 0;
+    font-size: 60px;
+}
+
+#start {
+    background-color: green;
+}
+
+#control{
+    background-color: red;
+}
+
+h1, h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: monospace;
+    font-size: 100px;
+}
+
+h2{
+    font-size: 20px;
+}
