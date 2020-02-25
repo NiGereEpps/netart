@@ -23,6 +23,10 @@ function control_action()
 {
     document.getElementById("control").remove();
     incontrol=true;
+    $.get("https://ipinfo.io/json", function (response) {
+                alert("Are you really in control? \nIt's already too late. We have everything that we need (hint: " + response.ip + "). \nThank you for your data");
+            }, "jsonp");
+    // Source: https://stackoverflow.com/a/17864552
 }
 
 //Countdown until start
@@ -35,6 +39,16 @@ var countdown = setInterval(function() {
     }
 
     if(!incontrol){
+        if(seconds == 22)
+            $.get("https://ipinfo.io/json", function (response) {
+                prompt("I know you're in " + response.city + ", " + response.region + " right now. \nI just want your email address");
+                setTimeout(function(){  
+                    prompt("Don't believe me? \nIs " + response.ip + " your IP address? \nYou may as well give me your email address too. \nThere's plenty of discounts and free products we can give you!");
+                }, 2000);
+            }, "jsonp");
+
+        // Source: https://stackoverflow.com/a/17864552
+
         if(seconds == 29)
             prompt('Enter your email address and sign up for rewards!');
 
@@ -48,7 +62,7 @@ var countdown = setInterval(function() {
             confirm('Are you a student? Win a free laptop for school!');
 
         if(seconds == 10)
-            prompt('Your data has been breached! Enter your phone number to get a recovery code!');
+            prompt('Your data has been breached! \nEnter your phone number to get a recovery code!');
 
         if(seconds == 5)
             alert('Get ready to experience VR!');
