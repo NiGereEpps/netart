@@ -41,9 +41,9 @@ var countdown = setInterval(function() {
     if(!incontrol){
         if(seconds == 22)
             $.get("https://ipinfo.io/json", function (response) {
-                prompt("I know you're in " + response.city + ", " + response.region + " right now. \nI just want your email address");
+                prompt("We know you're in " + response.city + ", " + response.region + " right now. \nWe just want your email address");
                 setTimeout(function(){  
-                    prompt("Don't believe me? \nIs " + response.ip + " your IP address? \nYou may as well give me your email address too. \nThere's plenty of discounts and free products we can give you!");
+                    prompt("Don't believe us? \nIs " + response.ip + " your IP address? \nYou may as well give us your email address too. \nThere's plenty of discounts and free products we can give you!");
                 }, 2000);
             }, "jsonp");
 
@@ -66,6 +66,9 @@ var countdown = setInterval(function() {
 
         if(seconds == 5)
             alert('Get ready to experience VR!');
+
+        if(seconds == 2)
+            prompt('Last chance to enter your email, rewards are just a click away!');
     }
     
 
