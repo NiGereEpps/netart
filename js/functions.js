@@ -8,7 +8,7 @@ function start(element)
 
 function start_action()
 {
-    window.location.href = "webvr.html";
+    window.location.href = "html/webvr.html";
 }
 
 var incontrol=false;
@@ -35,7 +35,7 @@ var seconds=30;
 var countdown = setInterval(function() {
     if(seconds == 0){
         clearInterval(countdown);
-        window.location.href = "webvr.html";
+        window.location.href = "html/webvr.html";
     }
 
     if(!incontrol){

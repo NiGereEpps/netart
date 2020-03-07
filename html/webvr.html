@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NE WebVR</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>NE Net Art Statement</title>
+    <meta name="description" content="Waiting Screen">
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    <script type="text/javascript" src="../js/vrfunctions.js"></script>  
 </head>
 <body>
     
@@ -37,7 +41,7 @@
      
 
        <a-entity id="room" 
-           gltf-model="models/Room.glb" 
+           gltf-model="../models/Room.glb" 
            position="-10.68744 -3.94677 -2.19433"
            scale="0.02 0.02 0.02"
        ></a-entity>
@@ -59,19 +63,17 @@
             visible="false"
         ></a-entity>
 
+       
+        </script>
         <a-entity id="screen"
             geometry="primitive: box" 
             scale="2.4 1.25 0.01"
-            material="src: images/screen.png"
+            material="src: ../images/screen.png"
             position="-1.745 1.893 -4.085"
             event-set__1="_event: mouseenter; material.color: white;"
             event-set__2="_event: mouseleave; material.color: grey;"
-            event-set__3="_event: click; _target: #room; visible: false"
-            event-set__4="_event: click; _target: #screen; visible: false"
-            event-set__5="_event: click; _target: #begin; visible: false"
-            event-set__6="_event: click; _target: #welcome; visible: true"
-            event-set__7="_event: click; _target: #scene; src: videos/city.mp4"
-            event-set__7="_event: click; _target: #scene; color:white"
+            event-set__8="_event: click; _target: #scene; color:white"
+            start-scenes
             color="white"
         ></a-entity>
 
