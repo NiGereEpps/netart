@@ -4,7 +4,7 @@
     <title>NE Net Art Statement</title>
     <meta name="description" content="Waiting Screen">
     <meta charset="UTF-8">
-    
+
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
@@ -46,13 +46,58 @@
            scale="0.02 0.02 0.02"
        ></a-entity>
 
+       <a-entity id="human" 
+           gltf-model="../models/human_sit.glb"
+           position="0.77259 0.38027 0.0349" 
+           scale="0.15 0.15 0.15"></a-entity>
+       ></a-entity>
+
         <a-entity id="begin"
-            text="value: Click on the screen to begin; 
+            text="value: Click on this screen to begin; 
             font: mozillavr; 
             align: center" 
             position="-1.745 2.71183 -4.085" 
             scale="3 3 2"
         ></a-entity>
+
+        <a-entity id="internet"
+            text="value: Welcome to the internet; 
+            font: mozillavr; 
+            align: center;
+            color: red;" 
+            position="1 2.9 1.1" 
+            rotation="0 -80 0"
+            scale="3 3 2"
+        ></a-entity>
+
+        <a-entity id="internet2"
+            text="value: Today we'll be exploring my social media!; 
+            font: mozillavr; 
+            align: center" 
+            position="1 2.7 1.1" 
+            rotation="0 -80 0"
+            scale="3 3 2"
+        ></a-entity>
+
+        <a-entity id="internet3"
+            text="value: We'll stop by my Facebook, Snapchat, and Instagram; 
+            font: mozillavr; 
+            align: center" 
+            position="1 2.5 1.1" 
+            rotation="0 -80 0"
+            scale="3 3 2"
+        ></a-entity>
+
+        <a-entity id="internet3"
+            text="value: Click on the screen to begin; 
+            font: mozillavr; 
+            align: center;
+            color: green;" 
+            position="1 2.3 1.1" 
+            rotation="0 -80 0"
+            scale="3 3 2"
+        ></a-entity>
+
 
         <a-entity id="welcome"
             text="value: Welcome to WebVR; 

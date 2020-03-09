@@ -1,8 +1,22 @@
-var page = 3;
+/*
+var page=3;
 
 function nextPage () {
-    window.location.href = 'webvr' + page + '.html'
+    window.location.href = 'webvr' + page + '.html';
     page++;
+}
+*/
+
+function page3 () {
+    window.location.href = 'webvr3.html'
+}
+
+function page4 () {
+    window.location.href = 'webvr4.html'
+}
+
+function finish(){
+    window.location.href = "statement.html"
 }
 
 

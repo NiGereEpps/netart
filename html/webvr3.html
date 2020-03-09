@@ -2,15 +2,57 @@
 <html>
 <head>
     <title>NE Net Art Statement</title>
-    <meta name="description" content="Instagram">
+    <meta name="description" content="Snapchat">
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
     <script type="text/javascript" src="../js/vrfunctions.js"></script> 
-    <script> setTimeout(nextPage, 10000); </script>
+    <script> setTimeout(page4, 10*1000); </script>
 </head>
+
 <body>
+
+    <a-scene>
+
+    <a-sky src="../images/data.mp4"></a-sky>
+
+        <a-entity id="camera"
+            camera
+            position="0 1.6 0" 
+            wasd-controls
+            rotation="-3.093972093706406 40.450820336236035 0" 
+            look-controls>
+        </a-entity>  
+
+        <a-entity 
+            position= "0 3.3 2.6"
+            light="color: #ffffff; 
+            intensity: 0.8"
+        ></a-entity>
+
+        <a-entity light="color: #ffffff; intensity: 0.4; type: ambient"></a-entity>
+
+        <a-plane id="floor"
+            rotation="-90 0 0"
+            src="../images/floor.jpg"
+            width="30" height="30"
+            repeat="4 6"
+        ></a-plane>
+
+        <a-entity id="human" 
+           gltf-model="../models/human_drunk.glb"
+           position="0 0.38027 -1.6" 
+           scale="0.1 0.1 0.1"></a-entity>
+       ></a-entity>
+
+        <a-plane id="image"
+            position="0 2 -3"
+            src="../images/party.jpg"
+            width="6" height="4"
+        ></a-plane>
+
+    </a-scene>
+
 </body>
 </html>
