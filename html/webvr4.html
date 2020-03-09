@@ -59,6 +59,44 @@
             width="6" height="4"
         ></a-plane>
 
+        <a-entity  id="heart"
+            gltf-model="../models/heart.glb"
+            position="2 0 -2.8" 
+           
+            animation="property: position;
+                       to: 2 3 -2.8;
+                       dur: 2000;
+                       easing: linear;
+                       loop: true;
+                       repeat: indefinite;"
+
+             animation__s="property: scale;
+                        to: 2 2 2;
+                        dur: 2000;
+                        easing: linear;
+                        loop: true;
+                        repeat: indefinite;"
+        ></a-entity>
+
+        <a-entity  id="heart"
+            gltf-model="../models/heart.glb"
+            position="-2 0 -2.8" 
+           
+            animation="property: position;
+                       to: -2 3 -2.8;
+                       dur: 2000;
+                       easing: linear;
+                       loop: true;
+                       repeat: indefinite;"
+
+             animation__s="property: scale;
+                        to: 2 2 2;
+                        dur: 2000;
+                        easing: linear;
+                        loop: true;
+                        repeat: indefinite;"
+        ></a-entity>
+
     </a-scene>
 
 </body>
