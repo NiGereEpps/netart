@@ -3,6 +3,7 @@
 <head>
     <title>NE Net Art Statement</title>
     <meta name="description" content="Instagram">
+    <meta name="author" content="Ni'Gere Epps">
     <meta charset="UTF-8">
 
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
@@ -12,9 +13,9 @@
 </head>
 <body>
 
-        <a-scene>
+    <a-scene>
 
-    <a-sky src="../images/data3.mp4"></a-sky>
+        <a-sky src="../images/data3.mp4"></a-sky>
 
         <a-entity id="camera"
             camera
@@ -39,18 +40,18 @@
             repeat="4 6"
         ></a-plane>
 
-       <a-entity id="human" 
+        <a-entity id="human" 
            gltf-model="../models/human_friend.glb"
            position="-0.175 0.38027 -1.7" 
            scale="0.1 0.1 0.1"></a-entity>
-       ></a-entity>
+        ></a-entity>
 
-       <a-entity id="human2" 
+        <a-entity id="human2" 
            gltf-model="../models/human_friend2.glb"
            position="0.325 0.38027 -1.5" 
            rotation="0 -22 0"
            scale="0.1 0.1 0.1"></a-entity>
-       ></a-entity>
+        ></a-entity>
 
         <a-plane id="image"
             position="0 2 -3"

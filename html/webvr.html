@@ -3,6 +3,7 @@
 <head>
     <title>NE Net Art Statement</title>
     <meta name="description" content="Waiting Screen">
+    <meta name="author" content="Ni'Gere Epps">
     <meta charset="UTF-8">
 
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -16,9 +17,6 @@
 
         <a-videosphere id="scene" color="gray"></a-videosphere>
 
-        <!--   
-        -->
-
         <a-entity id="camera"
             camera
             position="-3.3 1.6 3.6" 
@@ -31,7 +29,7 @@
                     raycaster="objects: #screen;"></a-cursor>
         </a-entity>  
 
-       <a-entity id="controller"
+        <a-entity id="controller"
             laser-controls
             line="color: red"
             event-set__1="_event: mouseenter; line.color: springgreen"
@@ -40,17 +38,17 @@
         ></a-entity>
      
 
-       <a-entity id="room" 
+        <a-entity id="room" 
            gltf-model="../models/Room.glb" 
            position="-10.68744 -3.94677 -2.19433"
            scale="0.02 0.02 0.02"
-       ></a-entity>
+        ></a-entity>
 
-       <a-entity id="human" 
+        <a-entity id="human" 
            gltf-model="../models/human_sit.glb"
            position="0.77259 0.38027 0.0349" 
            scale="0.15 0.15 0.15"></a-entity>
-       ></a-entity>
+        ></a-entity>
 
         <a-entity id="begin"
             text="value: Click on this screen to begin; 
@@ -108,8 +106,6 @@
             visible="false"
         ></a-entity>
 
-       
-        </script>
         <a-entity id="screen"
             geometry="primitive: box" 
             scale="2.4 1.25 0.01"

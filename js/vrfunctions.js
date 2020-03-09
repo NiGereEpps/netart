@@ -19,18 +19,15 @@ function finish(){
     window.location.href = "statement.html"
 }
 
-
+//onclick to switch page and start timer
 AFRAME.registerComponent('start-scenes', {
 
     init: function () {
       
-      var el = this.el;  // <a-box>
-      
-      el.addEventListener('click', function () {
-        window.location.href = 'webvr2.html';
-        //setInterval(nextPage, 5000);
-      });
+        var el = this.el; 
 
-    
+        el.addEventListener('click', function () {
+            window.location.href = 'webvr2.html';
+        });
     }
   });
