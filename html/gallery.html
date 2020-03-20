@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NE Net Art Statement</title>
+    <meta name="description" content="Intro to Internet Art Final">
+    <meta name="author" content="Ni'Gere Epps">
+    <meta charset="UTF-8">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/vrfunctions.js"></script> 
+    <script> sessionStorage.viewmode = 'true'; </script> 
+</head>
+
+<body>
+    <h1> Welcome to the Gallery </h1>
+    <h2> Here you can view the VR social media platforms in a new tab without a time limit </h2>
+
+    <span class="row"> <!-- These could be divs -->
+        
+        <span class="column">
+            <button onclick="openPage(2)" class="clickbutton" style="background: #4267B2">
+                View VR<br/>Facebook
+            </button>
+
+            <img src="../images/fb_screenshot.png" style="width:152px;height:94px;"> 
+        </span>
+  
+        <span class="column">
+            <button onclick="openPage(3)" class="clickbutton" style="background: #FFFC00;">
+                View VR<br/>Snapchat</button>
+
+            <img src="../images/sc_screenshot.png" style="width:152px;height:94px;"> 
+        </span>
+    </span>
+    
+    <span class="row">
+
+        <span class="column">
+            <button id="insta" onclick="openPage(4)" class="clickbutton" >
+                View VR<br/>Instagram</button>
+
+            <img src="../images/ig_screenshot.png" style="width:154px;height:94px;"> 
+        </span>
+        
+        <span class="column">
+            <button onclick="restart()" class="clickbutton" style="background: #f70808; font-size: 23px;">
+                Reset<br/>Experience</button>
+
+            <img src="../images/reset_screenshot.png" style="width:162px;height:94px;"> 
+        </span>
+    </span>
+</body>
+
+</html>

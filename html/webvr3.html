@@ -9,12 +9,19 @@
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
     <script type="text/javascript" src="../js/vrfunctions.js"></script> 
-    <script> setTimeout(page4, 30*1000); </script>
+    <script> changePage(4); </script>
 </head>
 
 <body>
 
     <a-scene>
+
+        <a-text id="text" 
+            value="30" 
+            position="1.7 3.5 -2.84" 
+            text="width: 20;"
+            countdown
+        ></a-text>
 
         <a-sky src="../images/data.mp4"></a-sky>
 
@@ -23,8 +30,8 @@
             position="0 1.6 0" 
             wasd-controls
             rotation="-3.093972093706406 40.450820336236035 0" 
-            look-controls>
-        </a-entity>  
+            look-controls
+        ></a-entity>  
 
         <a-entity 
             position= "0 3.3 2.6"
